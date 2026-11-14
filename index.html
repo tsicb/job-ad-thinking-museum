@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a34">
+  <meta name="description" content="求人広告を3つのレンズで見つめ、覚えるために分け、考えるためにつなぐ。27テーマを探索しながら学べるデジタル科学館。">
+  <title>求人広告を、3つで考える。｜思考の科学館</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文に移動</a>
+<header class="site-header">
+  <div class="header-inner wrap">
+    <a class="brand" href="#top" aria-label="思考の科学館 トップへ">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>THINKING <b>MUSEUM</b><small>求人広告の思考の科学館</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="展示室ナビゲーション">
+      <a href="#know">01 知る</a><a href="#explore">02 見る</a><a href="#try">03 試す</a>
+    </nav>
+    <a class="header-link" href="https://github.com/tsicb/job-ad-thinking-museum" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow light"><span class="eyebrow-line"></span> THE ART OF THINKING IN THREES / 2026</p>
+      <h1 id="hero-title">求人広告を、<span>3つ</span>で考える。</h1>
+      <p class="hero-catch">覚えるために分ける。<br>考えるためにつなぐ。</p>
+      <p class="hero-text">「何がある？」「なぜ響く？」「どう届ける？」<br>情報を小さなまとまりにし、現在地を見失わずに思考を巡らせる。読むだけでなく、触って学べる小さなデジタル科学館です。</p>
+      <div class="hero-actions"><a class="btn btn-accent" href="#know">展示を見に行く <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#explore">思考の地図を開く <span aria-hidden="true">→</span></a></div>
+      <p class="hero-meta">独自の思考モデル v0.1　／　暗記より、再構築へ。</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+      <div class="hero-art-center"><span class="little-label">THINKING MAP</span><strong>3<span>×</span>3<span>×</span>3</strong><small>考えるための地図</small></div>
+      <span class="orbit-tag orb-a">素材 <i>01</i></span><span class="orbit-tag orb-b">価値 <i>02</i></span><span class="orbit-tag orb-c">伝達 <i>03</i></span>
+      <span class="art-tick tick-a"></span><span class="art-tick tick-b"></span><span class="art-tick tick-c"></span>
+    </div>
+  </div>
+  <div class="wrap hero-foot"><span>SCROLL TO EXPLORE</span><span>3つのレンズ　/　9つの視点　/　27の小テーマ</span></div>
+</section>
+
+<div class="section-index wrap" aria-label="展示室の概要">
+  <a href="#know"><span>01 / KNOW</span><strong>知る</strong><small>考え方を身につける</small><b aria-hidden="true">↗</b></a>
+  <a href="#explore"><span>02 / EXPLORE</span><strong>見る</strong><small>思考の地図を探検する</small><b aria-hidden="true">↗</b></a>
+  <a href="#try"><span>03 / PRACTICE</span><strong>試す</strong><small>自分の頭で再構築する</small><b aria-hidden="true">↗</b></a>
+</div>
+
+<section id="know" class="museum-section section-light" aria-labelledby="know-title">
+ <div class="wrap">
+  <div class="section-heading"><div><p class="eyebrow">EXHIBITION 01 / KNOW</p><h2 id="know-title">知る<span class="heading-dot">.</span></h2></div><p>分類の「正解」を覚えるのではなく、<br>考えるための入口をつくる。</p></div>
+  <div class="exhibit-label"><span>01—01</span><span>なぜ、3つに分けるのか</span></div>
+  <div class="two-col editorial">
+    <div><h3>多くの情報を、<br><em>思い出せる形</em>に。</h3><p>求人広告には仕事内容、給与、休日、会社、求職者心理、言葉の選び方など、多くの着眼点があります。全部を一度に思い出すのではなく、少数の「入口」をつくっておくと、必要な情報へたどりやすくなります。</p><p>ここでは各テーマを原則3つに分けます。3という数字は、この科学館が採用した<em>設計上のルール</em>であり、誰にとっても科学的に最適な個数という意味ではありません。</p></div>
+    <div class="display-board">
+      <div class="board-top"><span>MINI EXHIBIT / 01</span><span>CHUNKING</span></div>
+      <h4>9つの項目を眺めてみる</h4>
+      <p class="muted small">切り替えると、同じ情報の見え方が変わります。</p>
+      <div class="toggle-switch" role="group" aria-label="表示方法"><button type="button" data-chunk="flat" aria-pressed="false">そのまま並べる</button><button type="button" data-chunk="grouped" aria-pressed="true">3つにまとめる</button></div>
+      <div id="chunk-demo" class="chunk-demo" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="exhibit-label"><span>01—02</span><span>3つのレンズ</span></div>
+  <div class="section-subhead"><h3>同じ求人を、<br>違う角度から見る。</h3><p>文章の「住所」を一つに固定する必要はありません。今何を考えたいかによって、思考の入口は変わります。</p></div>
+  <div class="lens-panel">
+    <div class="lens-intro"><span class="micro">EXAMPLE SENTENCE</span><p>「残業は月平均5時間です。」</p><small>展示用の仮想例文</small></div>
+    <div class="lens-controls" role="group" aria-label="考える角度"><button type="button" data-demo-lens="materials" aria-pressed="true">01 <strong>素材</strong><small>何がある？</small></button><button type="button" data-demo-lens="value" aria-pressed="false">02 <strong>価値</strong><small>なぜ響く？</small></button><button type="button" data-demo-lens="delivery" aria-pressed="false">03 <strong>伝達</strong><small>どう届ける？</small></button></div>
+    <div id="lens-result" class="lens-result" aria-live="polite"></div>
+  </div>
+
+  <div class="exhibit-label"><span>01—03</span><span>分け方のルールと限界</span></div>
+  <div class="rule-grid">
+    <article class="rule-card"><span class="rule-num">01</span><h4>まとめる</h4><p>4〜5個になったら、共通するものを束ねられないか考える。</p></article>
+    <article class="rule-card"><span class="rule-num">02</span><h4>階層を増やす</h4><p>一度に扱う情報が多いなら、まず大きな3つを作り、下へ分ける。</p></article>
+    <article class="rule-card"><span class="rule-num">03</span><h4>そこで止める</h4><p>無理に枝を増やさない。重要な3つを表に出し、補足は別に残してよい。</p></article>
+  </div>
+  <div class="note-strip"><strong>この科学館の約束</strong><p>27テーマは「全部を埋めるチェックリスト」ではありません。分類から外れた情報を捨てず、求人情報の正確性や必要な表示事項は別途確認します。</p></div>
+ </div>
+</section>
+
+<section id="explore" class="museum-section section-cream" aria-labelledby="explore-title">
+ <div class="wrap">
+  <div class="section-heading"><div><p class="eyebrow">EXHIBITION 02 / EXPLORE</p><h2 id="explore-title">見る<span class="heading-dot">.</span></h2></div><p>地図の現在地を見つけ、<br>上・横・別の枝へ移動する。</p></div>
+  <div class="exhibit-label"><span>02—01</span><span>3×3×3 思考マップ</span></div>
+  <div class="map-introduction"><h3>27テーマを、一度に<br>覚えなくていい。</h3><p>大分類を選び、その下の3つを選ぶ。現在地から上位テーマ・兄弟テーマ・具体例が確認できます。地図の名称は固定し、思考の移動先は自由です。</p></div>
+  <div id="map-app" class="map-app" aria-label="インタラクティブな思考マップ">
+    <div id="map-lenses" class="map-lenses" role="group" aria-label="大分類"></div>
+    <div class="map-layout">
+      <div class="map-sidebar"><div class="panel-head"><span>BRANCHES</span><span>第2層 → 第3層</span></div><div id="map-groups"></div></div>
+      <div class="map-detail"><div class="panel-head"><span>YOU ARE HERE</span><span id="map-depth"></span></div><div id="map-breadcrumb" class="breadcrumb" aria-label="現在地"></div><div id="map-node" aria-live="polite"></div><div class="sibling-panel"><span class="micro">SIBLINGS / 同じ階層</span><div id="map-siblings" class="chip-row"></div></div><div class="sibling-panel"><span class="micro">MOVE / 関連する角度へ</span><div id="map-related" class="chip-row"></div></div></div>
+    </div>
+  </div>
+
+  <div class="exhibit-label"><span>02—02</span><span>13組の記憶フレーズ</span></div>
+  <div class="section-subhead"><h3>単語の列より、<br>意味のまとまりを。</h3><p>親テーマから、3つの子テーマを復元するための「問い」を持ちます。フレーズは正確な暗唱より、関係を引き出すためのものです。</p></div>
+  <div class="phrase-toolbar"><label for="phrase-filter">表示する枝</label><select id="phrase-filter"><option value="all">すべての13組</option><option value="materials">素材</option><option value="value">価値</option><option value="delivery">伝達</option></select><span>カードを開いて答え合わせ</span></div>
+  <div id="phrase-grid" class="phrase-grid"></div>
+
+  <div class="exhibit-label"><span>02—03</span><span>縦・横・渡る</span></div>
+  <div class="section-subhead"><h3>地図は、<br>動かしてこそ面白い。</h3><p>「育成体制」のような一つの素材から、求職者の不安や広告表現へ。3つの操作を手がかりに、思考を広げます。</p></div>
+  <div class="movement-board"><div class="movement-actions" role="group" aria-label="移動方法"><button type="button" data-movement="vertical" aria-pressed="true"><strong>縦</strong><small>抽象化・具体化</small></button><button type="button" data-movement="horizontal" aria-pressed="false"><strong>横</strong><small>兄弟の視点へ</small></button><button type="button" data-movement="bridge" aria-pressed="false"><strong>渡</strong><small>別のレンズへ</small></button></div><div id="movement-result" class="movement-result" aria-live="polite"></div></div>
+ </div>
+</section>
+
+<section id="try" class="museum-section section-light" aria-labelledby="try-title">
+ <div class="wrap">
+  <div class="section-heading"><div><p class="eyebrow">EXHIBITION 03 / PRACTICE</p><h2 id="try-title">試す<span class="heading-dot">.</span></h2></div><p>一文を見つめ、現在地を決め、<br>別の枝へ移動してみる。</p></div>
+  <div class="exhibit-label"><span>03—01</span><span>一文を3つのレンズで読む</span></div>
+  <div class="lab-console">
+    <div class="lab-left"><span class="micro">SPECIMEN / 分析する一文</span><label for="sentence-select">例文を切り替える</label><select id="sentence-select"><option value="overtime">残業は月平均5時間です。</option><option value="training">未経験歓迎。入社後は先輩が教えます。</option><option value="growth">やりがいを感じながら成長できます。</option></select><blockquote id="sentence-quote">「残業は月平均5時間です。」</blockquote><p class="muted small">例文はすべて学習用の仮想例です。</p></div>
+    <div class="lab-right"><span class="micro">CHOOSE YOUR LENS</span><div id="lab-controls" class="lab-switch" role="group" aria-label="例文の分析視点"><button type="button" data-lab-lens="materials" aria-pressed="true">素材</button><button type="button" data-lab-lens="value" aria-pressed="false">価値</button><button type="button" data-lab-lens="delivery" aria-pressed="false">伝達</button></div><div id="lab-result" aria-live="polite"></div></div>
+  </div>
+
+  <div class="exhibit-label"><span>03—02</span><span>訴求の弱い原稿を診断する</span></div>
+  <div class="diagnostic-layout">
+    <article class="vacancy-card"><span class="micro">SAMPLE / 仮想求人</span><h3>一般事務スタッフ</h3><p>PC入力、書類整理、電話対応などの一般事務業務をお任せします。</p><dl><div><dt>勤務時間</dt><dd>8:00〜17:00</dd></div><div><dt>残業</dt><dd>月平均5時間</dd></div><div><dt>賞与</dt><dd>年2回（支給実績あり）</dd></div></dl><p class="muted small">実在企業を評価するものではありません。</p></article>
+    <div class="diagnosis-console"><span class="micro">WHERE IS THE GAP?</span><h3>どこに改善の余地がある？</h3><div class="diagnosis-tabs" role="group" aria-label="診断する観点"><button type="button" data-diagnosis="materials" aria-pressed="true">素材</button><button type="button" data-diagnosis="value" aria-pressed="false">価値</button><button type="button" data-diagnosis="delivery" aria-pressed="false">伝達</button></div><div id="diagnosis-result" aria-live="polite"></div></div>
+  </div>
+  <p class="method-caption">「不足」は原稿に記載がないという意味で、企業にその制度や特徴が存在しないと断定するものではありません。</p>
+
+  <div class="exhibit-label"><span>03—03</span><span>思い出して、再構築する</span></div>
+  <div class="section-subhead"><h3>地図を閉じても、<br>3つが浮かぶだろうか。</h3><p>親テーマから3つを思い出し、答えを開いて確かめる。正確に暗唱できるかより、3つの意味のつながりを再構築できるかを大切にします。</p></div>
+  <div class="quiz-layout">
+    <div class="quiz-main"><div class="quiz-top"><span class="micro">RECALL STATION</span><span id="quiz-progress">1 / 13</span></div><div class="quiz-modes" role="group" aria-label="練習方法"><button type="button" data-quiz-mode="full" aria-pressed="true">3つを思い出す</button><button type="button" data-quiz-mode="missing" aria-pressed="false">欠けた1つ</button></div><div id="quiz-question" class="quiz-question" aria-live="polite"></div><div id="quiz-answer" class="quiz-answer" aria-live="polite" hidden></div><div class="quiz-actions"><button type="button" class="btn btn-outline" id="quiz-reveal">答えを表示</button><button type="button" class="btn btn-dark" id="quiz-next">次の問題 →</button></div></div>
+    <aside class="quiz-aside"><span class="micro">HOW TO LEARN</span><h4>覚えるより、<br>つながりをつくる。</h4><p>① 親テーマから3つを予想。<br>② 3つの関係を言葉にする。<br>③ 忘れたら、問いから組み立て直す。</p><p class="muted small">結果は保存しません。正解率を競う試験ではなく、再構築の練習です。</p></aside>
+  </div>
+ </div>
+</section>
+
+<section class="closing-section" id="about" aria-labelledby="closing-title"><div class="wrap closing-grid">
+ <div><p class="eyebrow light">A LIVING FIELD GUIDE</p><h2 id="closing-title">これは、<br>完成された正解集ではない。</h2></div>
+ <div><p>「素材・価値・伝達」は求人広告の見つめ方の一つです。分類の網羅性や厳密さより、記憶しやすさ、現在地の把握、新しい問いの発見を優先しました。</p><p>複数の枝に関連するテーマは、そのまま複数の角度から考えてよい。思考の地図は、考える自由を狭めるためでなく、広げるためにあります。</p><div class="closing-quote">「覚えるために分ける。考えるためにつなぐ。」</div></div>
+</div></section>
+
+<section class="source-section" aria-labelledby="sources-title"><div class="wrap source-inner">
+ <div><p class="eyebrow">METHOD & REFERENCES</p><h2 id="sources-title">方法と限界</h2></div>
+ <div><p>3分割は本サイト独自の設計選択です。「誰でも3つが最適」とは主張しません。記憶容量や想起練習についての研究は背景知識であり、この27テーマ自体の記憶効果や応募成果は未検証です。</p><p>実際の求人に適用する際は、求人の事実・価値の仮説・表現案を区別し、法令上必要な労働条件の表示を別途確認してください。</p><div class="source-links"><a href="https://pubmed.ncbi.nlm.nih.gov/11515286/" target="_blank" rel="noopener noreferrer">Cowan (2001) — Short-term memory capacity ↗</a><a href="https://pubmed.ncbi.nlm.nih.gov/16507066/" target="_blank" rel="noopener noreferrer">Roediger & Karpicke (2006) — Test-enhanced learning ↗</a><a href="./docs/exhibition-design-v0.1.md">展示設計書を読む ↗</a></div></div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap footer-inner"><div><span class="brand-mini">THINKING MUSEUM</span><p>求人広告を、3つで考える。</p></div><div><span>© 2026 Thinking Museum / Experimental edition v0.1</span><a href="#top">ページの上へ ↑</a></div></div></footer>
+<noscript><p class="noscript">このサイトの操作型展示にはJavaScriptが必要です。文章部分はそのまま読めます。</p></noscript>
+</body>
+</html>

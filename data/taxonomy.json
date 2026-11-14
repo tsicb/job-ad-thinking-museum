@@ -1,0 +1,499 @@
+{
+  "version": "0.1.0",
+  "updated": "2026-11-15",
+  "title": "求人広告を、3つで考える。",
+  "subtitle": "覚えるために分ける。考えるためにつなぐ。",
+  "methodNote": "3分割は想起を助けるための設計上の選択であり、科学的に唯一最適な分割数とは主張しない。分類は排他的でなく、テーマは複数の枝と関連してよい。",
+  "nodes": [
+    {
+      "id": "root",
+      "label": "求人広告テキスト",
+      "depth": 0,
+      "parentId": null,
+      "children": [
+        "materials",
+        "value",
+        "delivery"
+      ],
+      "question": "どう理解し、魅力を見つけ、届けるか？",
+      "mnemonic": "何がある？ なぜ響く？ どう届ける？",
+      "relation": "素材→価値→伝達"
+    },
+    {
+      "id": "materials",
+      "label": "素材",
+      "depth": 1,
+      "parentId": "root",
+      "children": [
+        "materials.work",
+        "materials.conditions",
+        "materials.organization"
+      ],
+      "question": "何がある？",
+      "mnemonic": "何をする？ どんな条件？ どんな会社？",
+      "relation": "構成"
+    },
+    {
+      "id": "materials.work",
+      "label": "仕事",
+      "depth": 2,
+      "parentId": "materials",
+      "children": [
+        "materials.work.role",
+        "materials.work.tasks",
+        "materials.work.requirements"
+      ],
+      "mnemonic": "何のため？ 何をする？ 何が要る？",
+      "relation": "目的→行動→必要な力"
+    },
+    {
+      "id": "materials.work.role",
+      "label": "役割",
+      "depth": 3,
+      "parentId": "materials.work",
+      "children": [],
+      "definition": "仕事の目的、責任、期待される成果",
+      "question": "何のために存在する仕事か？",
+      "example": "営業担当が顧客対応に集中できるよう支援する"
+    },
+    {
+      "id": "materials.work.tasks",
+      "label": "実務",
+      "depth": 3,
+      "parentId": "materials.work",
+      "children": [],
+      "definition": "日々の作業、流れ、担当範囲",
+      "question": "具体的に何をするか？",
+      "example": "受注入力、書類作成、電話対応"
+    },
+    {
+      "id": "materials.work.requirements",
+      "label": "要件",
+      "depth": 3,
+      "parentId": "materials.work",
+      "children": [],
+      "definition": "必要な経験、資格、知識、能力",
+      "question": "何が必要か？",
+      "example": "基本PC操作、対人調整の経験"
+    },
+    {
+      "id": "materials.conditions",
+      "label": "条件",
+      "depth": 2,
+      "parentId": "materials",
+      "children": [
+        "materials.conditions.compensation",
+        "materials.conditions.schedule",
+        "materials.conditions.employment"
+      ],
+      "mnemonic": "いくら？ いつどこで？ どんな契約？",
+      "relation": "対価・働き方・契約"
+    },
+    {
+      "id": "materials.conditions.compensation",
+      "label": "報酬",
+      "depth": 3,
+      "parentId": "materials.conditions",
+      "children": [],
+      "definition": "給与、賞与、手当、金銭的待遇",
+      "question": "何を受け取るか？",
+      "example": "月給、賞与実績、資格手当"
+    },
+    {
+      "id": "materials.conditions.schedule",
+      "label": "勤務",
+      "depth": 3,
+      "parentId": "materials.conditions",
+      "children": [],
+      "definition": "時間、休日、場所、勤務方法",
+      "question": "どう働くか？",
+      "example": "フレックス、年間休日、勤務地"
+    },
+    {
+      "id": "materials.conditions.employment",
+      "label": "雇用",
+      "depth": 3,
+      "parentId": "materials.conditions",
+      "children": [],
+      "definition": "雇用形態、契約期間、試用期間",
+      "question": "どういう雇用上の約束か？",
+      "example": "正社員、試用期間、契約更新"
+    },
+    {
+      "id": "materials.organization",
+      "label": "組織",
+      "depth": 2,
+      "parentId": "materials",
+      "children": [
+        "materials.organization.business",
+        "materials.organization.people",
+        "materials.organization.systems"
+      ],
+      "mnemonic": "何を営み、誰がいて、どう回る？",
+      "relation": "事業・人・仕組み"
+    },
+    {
+      "id": "materials.organization.business",
+      "label": "事業",
+      "depth": 3,
+      "parentId": "materials.organization",
+      "children": [],
+      "definition": "会社の事業、規模、実績、方針",
+      "question": "会社は何を営むか？",
+      "example": "提供サービス、事業規模"
+    },
+    {
+      "id": "materials.organization.people",
+      "label": "人",
+      "depth": 3,
+      "parentId": "materials.organization",
+      "children": [],
+      "definition": "上司、同僚、チーム、人間関係",
+      "question": "誰と働くか？",
+      "example": "配属チームの人数、先輩の役割"
+    },
+    {
+      "id": "materials.organization.systems",
+      "label": "仕組み",
+      "depth": 3,
+      "parentId": "materials.organization",
+      "children": [],
+      "definition": "教育、評価、昇進、業務運営",
+      "question": "どう回る組織か？",
+      "example": "研修制度、業務分担、評価制度"
+    },
+    {
+      "id": "value",
+      "label": "価値",
+      "depth": 1,
+      "parentId": "root",
+      "children": [
+        "value.gain",
+        "value.protect",
+        "value.fit"
+      ],
+      "question": "なぜ響く？",
+      "mnemonic": "何を得る？ 何を守る？ 自分に合う？",
+      "relation": "獲得・保護・適合"
+    },
+    {
+      "id": "value.gain",
+      "label": "得る",
+      "depth": 2,
+      "parentId": "value",
+      "children": [
+        "value.gain.income",
+        "value.gain.growth",
+        "value.gain.fulfillment"
+      ],
+      "mnemonic": "お金が入る、力がつく、やりがいを感じる",
+      "relation": "収入・能力・充実感"
+    },
+    {
+      "id": "value.gain.income",
+      "label": "収入",
+      "depth": 3,
+      "parentId": "value.gain",
+      "children": [],
+      "definition": "収入向上や経済的な余裕の期待",
+      "question": "何が経済的に増える？",
+      "example": "給与アップを期待する"
+    },
+    {
+      "id": "value.gain.growth",
+      "label": "成長",
+      "depth": 3,
+      "parentId": "value.gain",
+      "children": [],
+      "definition": "習得、経験、可能性の拡大",
+      "question": "何ができるようになる？",
+      "example": "未経験から採用業務を学ぶ"
+    },
+    {
+      "id": "value.gain.fulfillment",
+      "label": "充実",
+      "depth": 3,
+      "parentId": "value.gain",
+      "children": [],
+      "definition": "達成感、貢献、承認、手応え",
+      "question": "何が満たされる？",
+      "example": "顧客やチームに役立つ実感"
+    },
+    {
+      "id": "value.protect",
+      "label": "守る",
+      "depth": 2,
+      "parentId": "value",
+      "children": [
+        "value.protect.life",
+        "value.protect.stability",
+        "value.protect.wellbeing"
+      ],
+      "mnemonic": "毎日の暮らし、先々の安心、心と体",
+      "relation": "日々・先々・自分"
+    },
+    {
+      "id": "value.protect.life",
+      "label": "暮らし",
+      "depth": 3,
+      "parentId": "value.protect",
+      "children": [],
+      "definition": "生活時間、家族時間、生活リズム",
+      "question": "日常で何を守れる？",
+      "example": "残業が少なく予定を立てやすい"
+    },
+    {
+      "id": "value.protect.stability",
+      "label": "安定",
+      "depth": 3,
+      "parentId": "value.protect",
+      "children": [],
+      "definition": "収入・雇用・将来への見通し",
+      "question": "先々の何が守られる？",
+      "example": "雇用継続への安心感"
+    },
+    {
+      "id": "value.protect.wellbeing",
+      "label": "心身",
+      "depth": 3,
+      "parentId": "value.protect",
+      "children": [],
+      "definition": "心身の健康、安全、負担への配慮",
+      "question": "心や体にどんな影響がある？",
+      "example": "業務負担や安全性を確かめる"
+    },
+    {
+      "id": "value.fit",
+      "label": "合う",
+      "depth": 2,
+      "parentId": "value",
+      "children": [
+        "value.fit.ability",
+        "value.fit.motivation",
+        "value.fit.circumstances"
+      ],
+      "mnemonic": "できる？ やりたい？ 都合がつく？",
+      "relation": "能力・志向・事情による判断"
+    },
+    {
+      "id": "value.fit.ability",
+      "label": "能力",
+      "depth": 3,
+      "parentId": "value.fit",
+      "children": [],
+      "definition": "経験・技能・適性と仕事の一致",
+      "question": "できるか？",
+      "example": "接客経験を応募者対応に活かせる"
+    },
+    {
+      "id": "value.fit.motivation",
+      "label": "志向",
+      "depth": 3,
+      "parentId": "value.fit",
+      "children": [],
+      "definition": "好み、価値観、望むキャリアとの一致",
+      "question": "やりたいか？",
+      "example": "人を支える仕事が好き"
+    },
+    {
+      "id": "value.fit.circumstances",
+      "label": "事情",
+      "depth": 3,
+      "parentId": "value.fit",
+      "children": [],
+      "definition": "家庭、移動、時間、個人的制約との適合",
+      "question": "現実に働けるか？",
+      "example": "通勤や勤務時間が生活に合う"
+    },
+    {
+      "id": "delivery",
+      "label": "伝達",
+      "depth": 1,
+      "parentId": "root",
+      "children": [
+        "delivery.select",
+        "delivery.arrange",
+        "delivery.narrate"
+      ],
+      "question": "どう届ける？",
+      "mnemonic": "何を選び、どこに置き、どう語る？",
+      "relation": "選定→配置→言語化"
+    },
+    {
+      "id": "delivery.select",
+      "label": "選ぶ",
+      "depth": 2,
+      "parentId": "delivery",
+      "children": [
+        "delivery.select.audience",
+        "delivery.select.claim",
+        "delivery.select.evidence"
+      ],
+      "mnemonic": "誰に？ 何を？ 何で裏づける？",
+      "relation": "相手→主張→根拠"
+    },
+    {
+      "id": "delivery.select.audience",
+      "label": "相手",
+      "depth": 3,
+      "parentId": "delivery.select",
+      "children": [],
+      "definition": "伝える対象・転職動機の選定",
+      "question": "誰に届ける？",
+      "example": "家庭時間を重視する転職者"
+    },
+    {
+      "id": "delivery.select.claim",
+      "label": "主張",
+      "depth": 3,
+      "parentId": "delivery.select",
+      "children": [],
+      "definition": "中心的に伝える訴求テーマ",
+      "question": "何を伝える？",
+      "example": "17時終業と生活時間の両立"
+    },
+    {
+      "id": "delivery.select.evidence",
+      "label": "根拠",
+      "depth": 3,
+      "parentId": "delivery.select",
+      "children": [],
+      "definition": "訴求を裏づける事実・数値・具体例",
+      "question": "何が裏づけになる？",
+      "example": "残業月平均5時間という実績"
+    },
+    {
+      "id": "delivery.arrange",
+      "label": "並べる",
+      "depth": 2,
+      "parentId": "delivery",
+      "children": [
+        "delivery.arrange.order",
+        "delivery.arrange.grouping",
+        "delivery.arrange.emphasis"
+      ],
+      "mnemonic": "どれから？ どこで区切る？ どこを強める？",
+      "relation": "読む流れ→区切り→注目"
+    },
+    {
+      "id": "delivery.arrange.order",
+      "label": "順序",
+      "depth": 3,
+      "parentId": "delivery.arrange",
+      "children": [],
+      "definition": "伝える情報の前後関係",
+      "question": "何から見せる？",
+      "example": "冒頭で働き方、次に仕事内容"
+    },
+    {
+      "id": "delivery.arrange.grouping",
+      "label": "まとまり",
+      "depth": 3,
+      "parentId": "delivery.arrange",
+      "children": [],
+      "definition": "段落、見出し、情報のグループ化",
+      "question": "どこを一緒に読む？",
+      "example": "仕事内容を3つの小見出しに分ける"
+    },
+    {
+      "id": "delivery.arrange.emphasis",
+      "label": "強弱",
+      "depth": 3,
+      "parentId": "delivery.arrange",
+      "children": [],
+      "definition": "文字量、反復、強調の配分",
+      "question": "どこを目立たせる？",
+      "example": "核となる価値を冒頭で強調"
+    },
+    {
+      "id": "delivery.narrate",
+      "label": "語る",
+      "depth": 2,
+      "parentId": "delivery",
+      "children": [
+        "delivery.narrate.perspective",
+        "delivery.narrate.wording",
+        "delivery.narrate.depiction"
+      ],
+      "mnemonic": "誰の目で？ どんな言葉で？ どう見せる？",
+      "relation": "視点→語彙→描写"
+    },
+    {
+      "id": "delivery.narrate.perspective",
+      "label": "視点",
+      "depth": 3,
+      "parentId": "delivery.narrate",
+      "children": [],
+      "definition": "語り手、視点、心理的距離",
+      "question": "誰の立場から語る？",
+      "example": "求職者の不安を代弁する"
+    },
+    {
+      "id": "delivery.narrate.wording",
+      "label": "語彙",
+      "depth": 3,
+      "parentId": "delivery.narrate",
+      "children": [],
+      "definition": "言葉選び、語調、言い回し",
+      "question": "どんな言葉で語る？",
+      "example": "制度の名称を生活場面で言い換える"
+    },
+    {
+      "id": "delivery.narrate.depiction",
+      "label": "描写",
+      "depth": 3,
+      "parentId": "delivery.narrate",
+      "children": [],
+      "definition": "数字、場面、具体例、比喩",
+      "question": "何を目に浮かばせる？",
+      "example": "1日のスケジュールを描写する"
+    }
+  ],
+  "exhibits": [
+    {
+      "id": "know-1",
+      "hall": "知る",
+      "title": "なぜ、3つに分けるのか"
+    },
+    {
+      "id": "know-2",
+      "hall": "知る",
+      "title": "3つのレンズ：素材・価値・伝達"
+    },
+    {
+      "id": "know-3",
+      "hall": "知る",
+      "title": "分け方のルールと限界"
+    },
+    {
+      "id": "see-1",
+      "hall": "見る",
+      "title": "3×3×3の思考地図"
+    },
+    {
+      "id": "see-2",
+      "hall": "見る",
+      "title": "13組の記憶フレーズ"
+    },
+    {
+      "id": "see-3",
+      "hall": "見る",
+      "title": "現在地と3つの移動：縦・横・渡"
+    },
+    {
+      "id": "try-1",
+      "hall": "試す",
+      "title": "一文を3つのレンズで読む"
+    },
+    {
+      "id": "try-2",
+      "hall": "試す",
+      "title": "訴求の弱い原稿から可能性を発掘"
+    },
+    {
+      "id": "try-3",
+      "hall": "試す",
+      "title": "思い出して、再構築する"
+    }
+  ]
+}
